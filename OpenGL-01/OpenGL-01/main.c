@@ -26,7 +26,6 @@ int main(int argc, const char * argv[]) {
     glutDisplayFunc(display);
     //开始执行
     glutMainLoop();
-    
     return 0;
 }
 void display (void)
@@ -39,7 +38,6 @@ void display (void)
     glColor3f(1.0,1.0,1.0);
     //指定绘制最终图像时所谁用的坐标系统,决定图像如何映射到屏幕上
     glOrtho(0.0,1.0,0.0,1.0,-1.0,1.0);
-    
     //绘制图像的坐标写在begin和end中间
     glBegin(GL_POLYGON);
     //多边形的角是由glvertex3f函数定义的,参数是x,y,z
